@@ -5,6 +5,5 @@ $ ./cyber-dojo create-collection jon=https://github.com/JonJagger/cyber-dojo-lan
 
 $ ./cyber-dojo up languages=jon
  
-from a cyber-dojo server which will pull the repo and put it into a docker
-volume named jon which will then used as the source of languages in the setup 
-page.
+from a cyber-dojo server which will git clone the repo into a docker volume
+named jon which will then used as the source of languages in the setup page.
