@@ -1,17 +1,12 @@
 FROM frolvlad/alpine-mono
 
-RUN apk add --update openssl
-RUN mozroots --import --sync
-RUN wget http://nuget.org/nuget.exe
 COPY packages.config .
-RUN mono --runtime=v4.0 nuget.exe restore -PackagesDirectory .
-RUN mkdir /moq
-RUN cp Moq.4.0.10827/lib/NET40/Moq.dll /moq/
-RUN cp NUnit.2.6.2/lib/nunit.framework.dll /moq/
-RUN ls -al /moq
 
-#COPY *.cs ./
-#
-#RUN dmcs -t:library -r:Moq.dll -r:nunit.framework.dll -out:RunTests.dll *.cs
-#
-#RUN nunit-console -nologo RunTests.dll
+RUN  apk add --update openssl \
+  && mozroots --import --sync \
+  && wget http://nuget.org/nuget.exe \
+  && mono --runtime=v4.0 nuget.exe restore -PackagesDirectory . \
+  && mkdir /moq \
+  && mv Moq.4.0.10827       /moq \
+  && mv NUnit.2.6.2         /moq \
+  && mv NUnit.Runners.2.6.1 /moq
