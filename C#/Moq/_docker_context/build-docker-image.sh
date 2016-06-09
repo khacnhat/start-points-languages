@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker build --tag=cyberdojofoundation/csharo_moq .
+docker build --tag=cyberdojofoundation/csharp_moq .
 
