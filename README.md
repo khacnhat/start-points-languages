@@ -1,6 +1,6 @@
 Work in progress. Aiming for a command api such as this...
 
-$ ./cyber-dojo volume create --name=jon --git=https://github.com/cyber-dojo/_default_languages.git
+$ ./cyber-dojo volume create --name=jon --git=https://github.com/cyber-dojo/default_languages.git
 
 $ ./cyber-dojo up --languages=jon
  
