@@ -9,6 +9,6 @@
   "filename_extension" : ".clj",
   "display_name": "Clojure, clojure.test",
   "unit_test_framework": "clojure_test",
-  "image_name": "cyberdojofoundation/clojure_clojure.test",
+  "image_name": "cyberdojofoundation/clojure_clojure_test",
   "tab_size": 2
 }
