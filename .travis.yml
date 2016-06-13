@@ -25,5 +25,6 @@ script:
     - docker version
     - docker images
 
-    - echo "docker run --rm run cyberdojofoundation/web:${DOCKER_ENGINE_VERSION} sh -c 'cd ... && ./manifest-checker.rb https://github.com/cyber-dojo/default-languages.git'
+    - echo "docker run --rm run cyberdojofoundation/web:${DOCKER_ENGINE_VERSION} sh -c 'cd ... && ./manifest-checker.rb https://github.com/cyber-dojo/default-languages.git'"
+
  
