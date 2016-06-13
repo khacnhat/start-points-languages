@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/cyber-dojo/default-languages.svg?branch=master)](https://travis-ci.org/cyber-dojo/default-languages)
+
+
+
 Work in progress. Aiming for a command api such as this...
 
 $ ./cyber-dojo volume create --name=jon --git=https://github.com/cyber-dojo/default-languages.git

@@ -1,0 +1,62 @@
+sudo: required
+
+services:
+  - docker
+
+language: ruby
+
+script:
+  - docker images
+
+env:
+    global:
+        - DOCKER_ENGINE_VERSION=1.11.2
+        - DOCKER_COMPOSE_VERSION=1.7.1
+        - DOCKER_MACHINE_VERSION=0.7.0
+        - APP_DOCKER_DIR=${TRAVIS_BUILD_DIR}/app/docker
+
+before_install:
+
+    # list docker-engine versions
+    - apt-cache madison docker-engine
+
+    # upgrade docker-engine to specific version
+    #- sudo apt-get -o Dpkg::Options::="--force-confnew" install -y docker-engine=${DOCKER_ENGINE_VERSION}-0~trusty
+
+    # reinstall docker-compose at specific version
+    #- curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+    #- chmod +x docker-compose
+    - sudo mv docker-compose /usr/local/bin
+
+    # install docker-machine at specific version
+    #- curl -L https://github.com/docker/machine/releases/download/v{DOCKER_COMPOSE_VERSION}/docker-machine-`uname -s`-`uname -m` > docker-machine
+    #- chmod +x docker-machine
+    #- sudo mv docker-machine /usr/local/bin
+
+    # smoke test
+    - docker run --rm hello-world
+
+script:
+    - docker version
+    #- docker-compose version
+    #- docker-machine version
+    - docker images
+
+    # Build the cyber-dojo images
+    #- cd ${APP_DOCKER_DIR}/nginx
+    #- ./build-image.sh
+    #- cd ${APP_DOCKER_DIR}/user-base
+    #- ./build-image.sh
+    #- cd ${APP_DOCKER_DIR}/web
+    #- ./build-image.sh ${DOCKER_ENGINE_VERSION}
+    #- cd ${APP_DOCKER_DIR}
+    #- ./cyber-dojo up
+    #- cid=`docker ps --all --quiet --filter "name=cdf-web"`
+    #- docker logs cdf-web
+    #- docker inspect -f {{.State.Running}} ${cid}
+    #- docker ps -a
+    #- docker         exec ${cid} sh -c "cd test && ./run.sh"
+
+    - echo ${TRAVIS_BUILD_DIR}
+    - echo ${TRAVIS_COMMIT}
+    - echo ${TRAVIS_BRANCH}
