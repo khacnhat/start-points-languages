@@ -29,15 +29,15 @@ script:
 
     - git clone --depth=1 --branch=master ${MY_URL} default-languages
 
-    - docker volume create \
-             --name=default-languages \
+    - docker volume create
+             --name=default-languages
              --label=cyber-dojo-volume=${MY_URL}
 
-    - cid=$(docker run --detach \
-                       --interactive \
-                       --net=none \
-                       --user=root \
-                       --volume=default-languages:/data \
+    - cid=$(docker run --detach
+                       --interactive
+                       --net=none
+                       --user=root
+                       --volume=default-languages:/data
                        cyberdojo/web:1.11.2 sh)
 
     - docker cp default-languages/. ${cid}:/data
