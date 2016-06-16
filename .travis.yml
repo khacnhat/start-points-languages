@@ -25,22 +25,23 @@ script:
     - docker version
     - docker images
 
-    - MY_URL=https://github.com/cyber-dojo/default-languages.git
+    - MY_NAME=default-languages
+    - MY_URL=https://github.com/cyber-dojo/${MY_NAME}.git
 
-    - git clone --depth=1 --branch=master ${MY_URL} default-languages
+    - git clone --depth=1 --branch=master ${MY_URL} ${MY_NAME}
 
     - docker volume create
-             --name=default-languages
+             --name=${MY_NAME}
              --label=cyber-dojo-volume=${MY_URL}
 
     - cid=$(docker run --detach
                        --interactive
                        --net=none
                        --user=root
-                       --volume=default-languages:/data
-                       cyberdojo/web:1.11.2 sh)
+                       --volume=${MY_NAME}:/data
+                       cyberdojo/web:${DOCKER_ENGINE_VERSION} sh)
 
-    - docker cp default-languages/. ${cid}:/data
+    - docker cp ${MY_NAME}/. ${cid}:/data
 
     - docker exec ${cid} sh -c "cd /data && rm -rf .git"
     - docker exec ${cid} sh -c "chown -R cyber-dojo:cyber-dojo /data"
