@@ -1,6 +1,6 @@
 {
   "type": "languages",
   "lhs_column_name": "language",
-  "rhs_column_name": "test"
+  "rhs_column_name": "tests"
 }
 
