@@ -14,7 +14,7 @@ class HikerTests: XCTestCase {
 }
 
 extension HikerTests {
-    static var allTests : [(String, HikerTests -> () throws -> Void)] {
+    static var allTests : [(String, (HikerTests) -> () throws -> Void)] {
         return [
             ("testLife_the_universe_and_everything", testLife_the_universe_and_everything),
         ]
