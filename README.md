@@ -9,6 +9,6 @@ You can specify an alternative git repo as follows:
 
 ```
 ./cyber-dojo volume create --help
-./cyber-dojo volume create --name=jon --git=https://github.com/cyber-dojo/start-points-languages.git
-./cyber-dojo up --languages=jon
+./cyber-dojo volume create --name=olve --git=https://github.com/cyber-dojo/start-points-languages.git
+./cyber-dojo up --languages=olve
 ```
