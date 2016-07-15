@@ -8,5 +8,13 @@
   "filename_extension" : ".cs",
   "display_name": "C#, Moq",
   "unit_test_framework": "nunit",
-  "image_name": "cyberdojofoundation/csharp_moq"
+  "image_name": "cyberdojofoundation/csharp_moq",
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red   if /^Errors and Failures:/.match(output)",
+    "  return :green if /^Tests run: (\\d*), Errors: 0, Failures: 0/.match(output)",
+    "  return :amber",
+    "}"
+  ]
 }
