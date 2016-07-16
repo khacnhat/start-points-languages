@@ -1,18 +1,34 @@
+
 {
-      "image_name": "cyberdojofoundation/clang_cgreen",
-      "display_name": "C (clang), Cgreen",
-      "unit_test_framework": "cgreen",
-      "filename_extension": ".c",
-      "tab_size": 4,
-      "visible_filenames": [
-        "hiker.c",
-        "hiker.h",
-        "hiker_tests.c",
-        "Makefile",
-        "cyber-dojo.sh"
-      ],
-      "progress_regexs" : [
-        "((\\d)+ tests)",
-        "(\\d)+ failure[s]?, (\\d)+ exception[s]?"
-      ]
-    }
+  "visible_filenames": [
+    "hiker.c",
+    "hiker.h",
+    "hiker_tests.c",
+    "Makefile",
+    "cyber-dojo.sh"
+  ],
+
+  "filename_extension": ".c",
+
+  "display_name": "C (clang), Cgreen",
+
+  "unit_test_framework": "cgreen",
+
+  "tab_size": 4,
+
+  "image_name": "cyberdojofoundation/clang_cgreen",
+
+  "progress_regexs" : [
+    "((\\d)+ tests)",
+    "(\\d)+ failure[s]?, (\\d)+ exception[s]?"
+  ],
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red   if / Failure: /.match(output)",
+    "  return :red   if / Exception: /.match(output)",
+    "  return :green if /0 failures, 0 exceptions/.match(output)",
+    "  return :amber",
+    "}"
+  ]
+}
