@@ -8,9 +8,24 @@
     "cyber-dojo.sh",
     ".jshintrc"
   ],
+
   "filename_extension" : ".js",
+
+  "tab_size": 2,
+
   "display_name": "Javascript, Mocha+chai+sinon",
+
   "unit_test_framework": "mocha",
+
   "image_name": "cyberdojofoundation/javascript-node_mocha_chai_sinon",
-  "tab_size": 2
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red   if /AssertionError:/.match(output)",
+    "  return :amber if /SyntaxError:/.match(output)",
+    "  return :amber if /ReferenceError:/.match(output)",
+    "  return :amber if /TypeError:/.match(output)",
+    "  return :green",
+    "}"
+  ]
 }

@@ -5,9 +5,22 @@
     "cyber-dojo.sh",
     ".jshintrc"
   ],
+
   "filename_extension" : ".js",
+
+  "tab_size": 2,
+
   "display_name": "Javascript, assert",
+
   "unit_test_framework": "node",
+
   "image_name": "cyberdojofoundation/javascript-node_assert",
-  "tab_size": 2
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red   if /AssertionError/.match(output)",
+    "  return :green if /^All tests passed/.match(output)",
+    "  return :amber",
+    "}"
+  ]
 }
