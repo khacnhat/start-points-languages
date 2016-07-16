@@ -7,8 +7,20 @@
     "makefile",
     "cyber-dojo.sh"
   ],
+
   "filename_extension" : ".cpp",
+
   "display_name": "C++ (g++), GoogleTest",
+
   "unit_test_framework": "google_test",
-  "image_name": "cyberdojofoundation/gpp_googletest"
+
+  "image_name": "cyberdojofoundation/gpp_googletest",
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red   if /\\[  FAILED  \\]/.match(output)",
+    "  return :green if /\\[  PASSED  \\]/.match(output)",
+    "  return :amber",
+    "}"
+  ]
 }

@@ -7,8 +7,21 @@
     "makefile",
     "cyber-dojo.sh"
   ],
+
   "filename_extension" : ".cpp",
+
   "display_name": "C++ (g++), Boost.Test",
+
   "unit_test_framework": "boost_test",
-  "image_name": "cyberdojofoundation/gpp_boosttest"
+
+  "image_name": "cyberdojofoundation/gpp_boosttest",
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red   if /\\*\\*\\* (\\d+) failure is detected/.match(output)",
+    "  return :red   if /\\*\\*\\* (\\d+) failures are detected/.match(output)",
+    "  return :green if /\\*\\*\\* No errors detected/.match(output)",
+    "  return :amber",
+    "}"
+  ]
 }
