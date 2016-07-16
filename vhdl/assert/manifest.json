@@ -4,8 +4,20 @@
      "hiker.vhdl",
      "cyber-dojo.sh"
   ],
+
   "filename_extension" : ".vhdl",
+
   "display_name": "VHDL, assert",
+
   "unit_test_framework": "vhdl_assert",
-  "image_name": "cyberdojofoundation/vhdl_assert"
+
+  "image_name": "cyberdojofoundation/vhdl_assert",
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red   if /assertion failed/.match(output)",
+    "  return :amber if /compilation error/.match(output)",
+    "  return :green",
+    "}"
+  ]
 }

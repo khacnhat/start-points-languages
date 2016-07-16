@@ -5,10 +5,25 @@
     "hiker.scala",
     "cyber-dojo.sh"
   ],
-  "unit_test_framework": "scala_test",
 
   "filename_extension" : ".scala",
+
+  "tab_size": 4,
+
+  "unit_test_framework": "scala_test",
+
   "display_name": "Scala, scalatest",
+
   "image_name": "cyberdojofoundation/scala_scalatest",
-  "tab_size": 4
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  scala_pattern = /Tests: succeeded (\\d+), failed (\\d+), canceled (\\d+), ignored (\\d+), pending (\\d+)/",
+    "  if match = scala_pattern.match(output)",
+    "    match[2] == '0' ? :green : :red",
+    "  else",
+    "    :amber",
+    " end",
+    "}"
+  ]
 }

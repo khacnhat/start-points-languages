@@ -5,8 +5,20 @@
      "hiker.R",
      "cyber-dojo.sh"
   ],
+
   "filename_extension" : ".R",
+
   "display_name": "R, RUnit",
+
   "unit_test_framework": "runit",
-  "image_name": "cyberdojofoundation/r_runit"
+
+  "image_name": "cyberdojofoundation/r_runit",
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red   if /Error in check(.*)/.match(output)",
+    "  return :green if /All tests passed/.match(output)",
+    "  return :amber",
+    "}"
+  ]
 }

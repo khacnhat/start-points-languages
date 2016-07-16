@@ -5,9 +5,27 @@
     "hiker.rb",
     "cyber-dojo.sh"
   ],
+
   "filename_extension" : ".rb",
-  "display_name": "Ruby, MiniTest",
-  "unit_test_framework": "ruby_mini_test",
+
   "tab_size": 2,
-  "image_name": "cyberdojofoundation/ruby_mini_test"
+
+  "display_name": "Ruby, MiniTest",
+
+  "unit_test_framework": "ruby_mini_test",
+
+  "image_name": "cyberdojofoundation/ruby_mini_test",
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  ruby_pattern = Regexp.new('^(\\d*) tests, (\\d*) assertions, (\\d*) failures, (\\d*) errors')",
+    "  if match = ruby_pattern.match(output)",
+    "    return :amber if match[4] != '0'",
+    "    return :red   if match[3] != '0'",
+    "    return :green",
+    "  else",
+    "    return :amber",
+    "  end",
+    "}"
+  ]
 }

@@ -5,9 +5,22 @@
     "hiker.py",
     "cyber-dojo.sh"
   ],
+
   "filename_extension" : ".py",
+
+  "tab_size": 4,
+
   "display_name": "Python, py.test",
+
   "unit_test_framework": "python_pytest",
+
   "image_name": "cyberdojofoundation/python_pytest",
-  "tab_size": 4
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red   if /=== FAILURES ===/.match(output)",
+    "  return :green if /=== (\\d*) passed/.match(output)",
+    "  return :amber",
+    "}"
+  ]
 }

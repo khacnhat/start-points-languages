@@ -5,9 +5,24 @@
     "hiker.rb",
     "cyber-dojo.sh"
   ],
+
   "filename_extension" : ".rb",
+
+  "tab_size": 2,
+
   "display_name": "Ruby, RSpec",
+
   "unit_test_framework": "ruby_rspec",
+
   "image_name": "cyberdojofoundation/ruby_rspec",
-  "tab_size": 2
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :green if /(\\d*) example(s?), 0 failures/.match(output)",
+    "  return :red   if /(\\d*) example(s?), (\\d*) failure(s?)/.match(output)",
+    "  return :red   if /(\\d*) scenario(s?) \\((\\d*) failed/.match(output)",
+    "  return :green if /(\\d*) scenario(s?) \\((\\d*) passed/.match(output)",
+    "  return :amber",
+    "}"
+  ]
 }
