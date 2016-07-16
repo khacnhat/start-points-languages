@@ -15,8 +15,6 @@
 
   "image_name": "cyberdojofoundation/clangpp_cgreen",
 
-  "unit_test_framework": "cgreen",
-
   "progress_regexs" : [
     "((\\d)+ tests)",
     "(\\d)+ failures[s]?, (\\d)+ exception[s]?"

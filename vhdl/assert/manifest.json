@@ -9,8 +9,6 @@
 
   "display_name": "VHDL, assert",
 
-  "unit_test_framework": "vhdl_assert",
-
   "image_name": "cyberdojofoundation/vhdl_assert",
 
   "red_amber_green" : [

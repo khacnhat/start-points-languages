@@ -11,8 +11,6 @@
 
   "display_name": "Swift, XCTest",
 
-  "unit_test_framework": "xctest",
-
   "image_name": "cyberdojofoundation/swift_xctest",
 
   "red_amber_green" : [

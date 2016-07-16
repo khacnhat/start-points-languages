@@ -13,8 +13,6 @@
 
   "display_name": "Clojure, clojure.test",
 
-  "unit_test_framework": "clojure_test",
-
   "image_name": "cyberdojofoundation/clojure_clojure_test",
 
   "red_amber_green" : [

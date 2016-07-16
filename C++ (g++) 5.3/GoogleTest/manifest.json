@@ -12,8 +12,6 @@
 
   "display_name": "C++ (g++), GoogleTest",
 
-  "unit_test_framework": "google_test",
-
   "image_name": "cyberdojofoundation/gpp_googletest",
 
   "red_amber_green" : [

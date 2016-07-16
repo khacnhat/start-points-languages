@@ -10,11 +10,9 @@
 
   "filename_extension": ".c",
 
-  "display_name": "C (clang), Cgreen",
-
-  "unit_test_framework": "cgreen",
-
   "tab_size": 4,
+
+  "display_name": "C (clang), Cgreen",
 
   "image_name": "cyberdojofoundation/clang_cgreen",
 

@@ -11,8 +11,6 @@
 
   "display_name": "Haskell, hunit",
 
-  "unit_test_framework": "hunit",
-
   "image_name": "cyberdojofoundation/haskell_hunit",
 
   "red_amber_green" : [

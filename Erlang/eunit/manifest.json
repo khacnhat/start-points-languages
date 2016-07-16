@@ -13,8 +13,6 @@
 
   "display_name": "Erlang, eunit",
 
-  "unit_test_framework": "eunit",
-
   "image_name": "cyberdojofoundation/erlang_eunit",
 
   "red_amber_green" : [

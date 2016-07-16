@@ -10,8 +10,6 @@
 
   "display_name": "R, RUnit",
 
-  "unit_test_framework": "runit",
-
   "image_name": "cyberdojofoundation/r_runit",
 
   "red_amber_green" : [

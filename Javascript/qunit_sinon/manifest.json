@@ -10,8 +10,6 @@
 
   "tab_size": 2,
 
-  "unit_test_framework": "qunit",
-
   "display_name": "Javascript, qunit+sinon",
 
   "image_name": "cyberdojofoundation/javascript-node_qunit_sinon",

@@ -13,8 +13,6 @@
 
   "display_name": "C++ (g++), Igloo",
 
-  "unit_test_framework": "cppigloo",
-
   "image_name": "cyberdojofoundation/gpp_igloo",
 
   "red_amber_green" : [

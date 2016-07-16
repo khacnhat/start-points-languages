@@ -11,8 +11,6 @@
 
   "tab_size": 2,
 
-  "unit_test_framework": "javascript_jasmine",
-
   "display_name": "Javascript, jasmine",
 
   "image_name": "cyberdojofoundation/javascript-node_jasmine",

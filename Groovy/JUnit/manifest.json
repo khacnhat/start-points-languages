@@ -10,8 +10,6 @@
 
   "display_name": "Groovy, JUnit",
 
-  "unit_test_framework": "junit",
-
   "image_name": "cyberdojofoundation/groovy_junit",
 
   "red_amber_green" : [

@@ -12,8 +12,6 @@
 
   "display_name": "CoffeeScript, jasmine",
 
-  "unit_test_framework": "coffeescript_jasmine",
-
   "image_name": "cyberdojofoundation/coffeescript_jasmine",
 
   "red_amber_green" : [

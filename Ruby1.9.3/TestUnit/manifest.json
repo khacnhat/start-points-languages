@@ -12,8 +12,6 @@
 
   "display_name": "Ruby, Test::Unit",
 
-  "unit_test_framework": "ruby_test_unit",
-
   "image_name": "cyberdojofoundation/ruby_test_unit",
 
   "red_amber_green" : [

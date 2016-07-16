@@ -13,8 +13,6 @@
 
   "tab_size": 4,
 
-  "unit_test_framework": "cgreen",
-
   "image_name": "cyberdojofoundation/gcc_cgreen",
 
   "progress_regexs" : [

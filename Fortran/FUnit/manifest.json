@@ -10,8 +10,6 @@
 
   "display_name": "Fortran, FUnit",
 
-  "unit_test_framework": "funit",
-
   "image_name": "cyberdojofoundation/fortran_funit",
 
   "red_amber_green" : [

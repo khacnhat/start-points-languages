@@ -12,8 +12,6 @@
 
   "image_name": "cyberdojofoundation/groovy_spock",
 
-  "unit_test_framework": "groovy_spock",
-
   "red_amber_green" : [
     "lambda { |output|",
     "  green_pattern = Regexp.new('^OK \\((\\d*) test')",

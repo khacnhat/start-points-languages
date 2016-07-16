@@ -15,8 +15,6 @@
 
   "display_name": "Javascript, Mocha+chai+sinon",
 
-  "unit_test_framework": "mocha",
-
   "image_name": "cyberdojofoundation/javascript-node_mocha_chai_sinon",
 
   "red_amber_green" : [

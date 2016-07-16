@@ -13,8 +13,6 @@
 
   "display_name": "C++ (g++), CppUTest",
 
-  "unit_test_framework":  "cpputest",
-
   "progress_regexs" : [
     "Errors \\((\\d)+ failures, (\\d)+ tests, (\\d)+ ran, (\\d)+ checks, (\\d)+ ignored, (\\d)+ filtered out, (\\d)+ ms\\)",
     "OK \\((\\d)+ tests, (\\d)+ ran, (\\d)+ checks, (\\d)+ ignored, (\\d)+ filtered out, (\\d)+ ms\\)"

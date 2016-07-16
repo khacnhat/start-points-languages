@@ -13,8 +13,6 @@
 
   "display_name": "Clojure, Midje",
 
-  "unit_test_framework": "midje",
-
   "image_name": "cyberdojofoundation/clojure_midje",
 
   "red_amber_green" : [

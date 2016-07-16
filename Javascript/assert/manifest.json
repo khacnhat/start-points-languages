@@ -12,8 +12,6 @@
 
   "display_name": "Javascript, assert",
 
-  "unit_test_framework": "node",
-
   "image_name": "cyberdojofoundation/javascript-node_assert",
 
   "red_amber_green" : [

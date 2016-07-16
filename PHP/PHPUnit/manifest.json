@@ -12,8 +12,6 @@
 
   "display_name": "PHP, PHPUnit",
 
-  "unit_test_framework": "php_unit",
-
   "image_name": "cyberdojofoundation/php_phpunit",
 
   "red_amber_green" : [

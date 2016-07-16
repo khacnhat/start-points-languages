@@ -7,9 +7,11 @@
      "makefile",
      "cyber-dojo.sh"
   ],
+
   "filename_extension" : ".c",
+
   "display_name": "C (clang), assert",
-  "unit_test_framework": "cassert",
+
   "image_name": "cyberdojofoundation/clang_assert",
 
   "red_amber_green" : [
