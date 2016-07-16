@@ -5,9 +5,25 @@
     "hiker.coffee",
     "cyber-dojo.sh"
   ],
+
   "filename_extension" : ".coffee",
+
+  "tab_size": 2,
+
   "display_name": "CoffeeScript, jasmine",
+
   "unit_test_framework": "coffeescript_jasmine",
+
   "image_name": "cyberdojofoundation/coffeescript_jasmine",
-  "tab_size": 2
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  pattern = /(\\d+) test(s?), (\\d+) assertion(s?), (\\d+) failure(s?), (\\d+) skipped/",
+    "  if match = pattern.match(output)",
+    "    match[5] == '0' ? :green : :red",
+    "  else",
+    "    :amber",
+    "  end",
+    "}"
+  ]
 }

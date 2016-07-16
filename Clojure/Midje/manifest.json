@@ -6,9 +6,22 @@
     "cyber-dojo.sh",
     "project.clj"
   ],
+
   "filename_extension" : ".clj",
+
+  "tab_size": 2,
+
   "display_name": "Clojure, Midje",
+
   "unit_test_framework": "midje",
+
   "image_name": "cyberdojofoundation/clojure_midje",
-  "tab_size": 2
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red if /^FAILURE: .* failed./.match(output)",
+    "  return :green if /^All checks .* succeeded./.match(output)",
+    "  return :amber",
+    "}"
+  ]
 }

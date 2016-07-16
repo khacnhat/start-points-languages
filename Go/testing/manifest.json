@@ -5,9 +5,23 @@
     "hiker.go",
     "cyber-dojo.sh"
   ],
+
   "filename_extension" : ".go",
+
+  "tab_size": 4,
+
   "display_name": "Go, testing",
+
   "unit_test_framework": "go_testing",
+
   "image_name": "cyberdojofoundation/go_testing",
-  "tab_size": 4
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :amber if /FAIL(\\s*)_\\/sandbox \\[build failed\\]/.match(output)",
+    "  return :red   if /FAIL/.match(output)",
+    "  return :green if /PASS/.match(output)",
+    "  return :amber",
+    "}"
+  ]
 }

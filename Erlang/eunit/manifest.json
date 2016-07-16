@@ -6,9 +6,22 @@
     "cyber-dojo.sh",
     "Makefile"
   ],
+
   "filename_extension" : ".erl",
+
+  "tab_size": 2,
+
   "display_name": "Erlang, eunit",
+
   "unit_test_framework": "eunit",
+
   "image_name": "cyberdojofoundation/erlang_eunit",
-  "tab_size": 2
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red   if /Failed: /.match(output)",
+    "  return :green if /passed./.match(output)",
+    "  return :amber",
+    "}"
+  ]
 }
