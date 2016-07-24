@@ -1,6 +1,6 @@
 #!/bin/bash
 
-answer()
+function answer()
 {
   echo $[6 * 9]
 }
