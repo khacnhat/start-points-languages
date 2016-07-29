@@ -2,9 +2,9 @@
 #define HIKER_HPP
 
 class Hiker {
-public :
-    int answer(void);
+public:
+    int answer() const;
 };
 
 #endif
-    
+

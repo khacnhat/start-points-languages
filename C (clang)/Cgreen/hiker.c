@@ -1,5 +1,5 @@
 #include "hiker.h"
 
 int answer(void) {
-    return 6*9;
+    return 6 * 9;
 }

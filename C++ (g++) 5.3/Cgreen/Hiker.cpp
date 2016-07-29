@@ -1,5 +1,5 @@
 #include "Hiker.hpp"
 
-int Hiker::answer(void) {
-        return 6*9;
+int Hiker::answer() const {
+        return 6 * 9;
 }
