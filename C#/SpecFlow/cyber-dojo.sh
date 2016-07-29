@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#build project file
+# build project file
 CSPROJ=RunTests.csproj
 
 echo "<Project xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\">" > $CSPROJ
@@ -22,7 +22,7 @@ echo "    <None Include=\"RunTests.dll.config\" />" >> $CSPROJ
 echo "  </ItemGroup>" >> $CSPROJ
 echo "</Project>" >> $CSPROJ
 
-#generate 'code behind'
+# generate 'code behind'
 mono /specflow/specflow.exe generateall RunTests.csproj
 
 dmcs -t:library -r:/usr/lib/mono/SpecFlow/TechTalk.SpecFlow.dll -r:/usr/lib/cli/nunit.framework-2.6/nunit.framework.dll -out:RunTests.dll *.cs
