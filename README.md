@@ -8,7 +8,7 @@ The git repo for [cyber-dojo's](https://github.com/cyber-dojo/web)
 You can specify an alternative git repo as follows:
 
 ```
-./cyber-dojo start-point create --help
-./cyber-dojo start-point create olve --git=https://github.com/cyber-dojo/start-points-languages.git
-./cyber-dojo up --languages=olve
+$ ./cyber-dojo start-point create --help
+$ ./cyber-dojo start-point create olve --git=https://github.com/cyber-dojo/start-points-languages.git
+$ ./cyber-dojo up --languages=olve
 ```
