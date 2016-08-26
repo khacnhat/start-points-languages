@@ -11,9 +11,9 @@
 
   "filename_extension" : ".java",
 
-  "display_name": "Java, Cucumber",
+  "display_name": "Java, Cucumber-Spring",
 
-  "image_name": "cyberdojofoundation/java_cucumber",
+  "image_name": "cyberdojofoundation/java_cucumber_spring",
 
   "red_amber_green" : [
     "lambda { |output|",
