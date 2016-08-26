@@ -1,4 +1,0 @@
-This Cucumber environment is bundled with:
-- Enough Spring to support DI
-- JMock2
-- Mockito
