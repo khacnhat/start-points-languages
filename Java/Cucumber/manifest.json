@@ -13,7 +13,7 @@
 
   "display_name": "Java, Cucumber",
 
-  "image_name": "cyberdojofoundation/java_cucumber",
+  "image_name": "cyberdojofoundation/java_cucumber_pico",
 
   "red_amber_green" : [
     "lambda { |output|",
