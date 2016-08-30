@@ -6,6 +6,7 @@
     "Hiker.java",
     "HikerStepDef.java",
     "RunCukesTest.java",
+    "cucumber.xml",
     "cyber-dojo.sh"
   ],
 
