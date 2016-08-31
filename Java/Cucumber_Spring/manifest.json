@@ -6,14 +6,15 @@
     "Hiker.java",
     "HikerStepDef.java",
     "RunCukesTest.java",
+    "cucumber.xml",
     "cyber-dojo.sh"
   ],
 
   "filename_extension" : ".java",
 
-  "display_name": "Java, Cucumber",
+  "display_name": "Java, Cucumber-Spring",
 
-  "image_name": "cyberdojofoundation/java_cucumber_pico",
+  "image_name": "cyberdojofoundation/java_cucumber_spring",
 
   "red_amber_green" : [
     "lambda { |output|",
