@@ -7,7 +7,8 @@ The git repo for [cyber-dojo's](https://github.com/cyber-dojo/web)
 
 ![default languages](https://1.bp.blogspot.com/-uQ0VHRgGNj4/V7QFRqruWXI/AAAAAAAAEqw/xzDTVGgFmxYwxWtwcDjAwbFj1zaVmF7_gCLcB/s320/setup_languages.png)
 
-You can specify and use an alternative languages start-point.
+You can specify and use an alternative languages+tests.
+
 Assuming https://github.com/olve/start-points-languages.git has the
 [correct format](http://blog.cyber-dojo.org/2016/08/creating-your-own-start-points.html):
 
