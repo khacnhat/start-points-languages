@@ -1,0 +1,26 @@
+
+{
+  "visible_filenames": [
+    "hiker.feature",
+    "hiker_steps.py",
+    "hiker.py",
+    "README",
+    "cyber-dojo.sh"
+  ],
+
+  "filename_extension" : ".py",
+
+  "tab_size": 4,
+
+  "display_name": "Python, behave",
+
+  "image_name": "cyberdojofoundation/python_behave",
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red   if /Failing scenarios/.match(output)",
+    "  return :green if /, 0 failed, /.match(output)",
+    "  return :amber",
+    "}"
+  ]
+}
