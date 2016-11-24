@@ -17,5 +17,3 @@ $ ./cyber-dojo start-point create --help
 $ ./cyber-dojo start-point create olve --git=https://github.com/olve/start-points-languages.git
 $ ./cyber-dojo up --languages=olve
 ```
-
-On Linux the ./cyber-dojo commands needs to be sudo'd.
