@@ -1,0 +1,24 @@
+{
+  "visible_filenames": [
+    "hiker.feature",
+    "hiker.js",
+    "hiker_steps.js",
+    "cyber-dojo.sh"
+  ],
+
+  "filename_extension" : ".js",
+
+  "tab_size": 2,
+
+  "display_name": "Javascript, Cucumber",
+
+  "image_name": "cyberdojofoundation/javascript-node_cucumber",
+
+  "red_amber_green" : [
+    "lambda { |output|",
+    "  return :red   if /\\(\\d+ failed/.match(output)",
+    "  return :green if /\\d+ passed/.match(output)",
+    "  return :amber",
+    "}"
+  ]
+}
