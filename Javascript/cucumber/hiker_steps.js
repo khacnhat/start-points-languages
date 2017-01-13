@@ -2,12 +2,10 @@
 
 const assert = require('assert');
 const defineSupportCode = require('/usr/local/lib/node_modules/cucumber').defineSupportCode;
-const hiker = require('./hiker')
-
-const CustomWorld = function () {}
+const hiker = require('./hiker');
 
 defineSupportCode(function (Cucumber) {
-  let score
+  let score;
 
   Cucumber.Given(/^the hitch-hiker selects some tiles$/, function () {});
 
@@ -18,7 +16,4 @@ defineSupportCode(function (Cucumber) {
   Cucumber.Then(/^the score is (\d+)$/, function (expectedScore) {
     assert.equal(score, expectedScore);
   });
-
-
-  // Cucumber.setWorldConstructor(CustomWorld);
 });
