@@ -1,7 +1,6 @@
 NUNIT_PATH=/nunit/NUnit.2.6.2/lib
 export MONO_PATH=${NUNIT_PATH}
 
-export HOME=${CYBER_DOJO_SANDBOX}
 mcs -t:library \
   -r:${NUNIT_PATH}/nunit.framework.dll \
   -out:RunTests.dll *.cs
