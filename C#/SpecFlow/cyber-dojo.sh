@@ -6,8 +6,6 @@ CSPROJ=RunTests.csproj
 echo "<Project xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\">" > $CSPROJ
 echo "  <ItemGroup>" >> $CSPROJ
 
-shopt -s nullglob
-
 for f in *.feature
 do
   echo "    <None Include=\"$f\">" >> $CSPROJ
