@@ -20,10 +20,18 @@ echo "    <None Include=\"RunTests.dll.config\" />" >> $CSPROJ
 echo "  </ItemGroup>" >> $CSPROJ
 echo "</Project>" >> $CSPROJ
 
+NUNIT_PATH=/nunit/NUnit.2.6.2/lib
+export MONO_PATH=${NUNIT_PATH}
+
 # generate 'code behind'
 mono /specflow/specflow.exe generateall RunTests.csproj
 
-dmcs -t:library -r:/usr/lib/mono/SpecFlow/TechTalk.SpecFlow.dll -r:/usr/lib/cli/nunit.framework-2.6/nunit.framework.dll -out:RunTests.dll *.cs
+mcs -t:library \
+  -r:/usr/lib/mono/SpecFlow/TechTalk.SpecFlow.dll \
+  -r:${NUNIT_PATH}/nunit.framework.dll \
+  -out:RunTests.dll *.cs
+
 if [ $? -eq 0 ]; then
-  nunit-console -nologo RunTests.dll
+  NUNIT_RUNNERS_PATH=/nunit/NUnit.Runners.2.6.1/tools
+  mono ${NUNIT_RUNNERS_PATH}/nunit-console.exe -nologo ./RunTests.dll
 fi
