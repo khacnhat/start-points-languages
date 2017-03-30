@@ -14,13 +14,5 @@
 
   "display_name": "Python, behave",
 
-  "image_name": "cyberdojofoundation/python_behave",
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :red   if /Failing scenarios/.match(output)",
-    "  return :green if /, 0 failed, /.match(output)",
-    "  return :amber",
-    "}"
-  ]
+  "image_name": "cyberdojofoundation/python_behave"
 }

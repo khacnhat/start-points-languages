@@ -12,13 +12,6 @@
 
   "display_name": "BCPL, all_tests_passed",
 
-  "image_name": "cyberdojofoundation/bcpl_all_tests_passed",
+  "image_name": "cyberdojofoundation/bcpl_all_tests_passed"
 
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :amber if /bcpl failed returncode/.match(output)",
-    "  return :green if /All tests passed/.match(output)",
-    "  return :red",
-    "}"
-  ]
 }

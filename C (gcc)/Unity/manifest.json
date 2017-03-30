@@ -13,13 +13,5 @@
 
   "display_name": "C (gcc), Unity",
 
-  "image_name": "cyberdojofoundation/gcc_unity",
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :red if /^FAIL/.match(output)",
-    "  return :green if /^OK/.match(output)",
-    "  return :amber",
-    "}"
-  ]
+  "image_name": "cyberdojofoundation/gcc_unity"
 }

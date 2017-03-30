@@ -10,13 +10,5 @@
 
   "display_name": "Fortran, FUnit",
 
-  "image_name": "cyberdojofoundation/fortran_funit",
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :red   if /==========\\[ SUMMARY \\]==========[^:]*:\\s*failed/.match(output)",
-    "  return :green if /==========\\[ SUMMARY \\]==========[^:]*:\\s*passed/.match(output)",
-    "  return :amber",
-    "}"
-  ]
+  "image_name": "cyberdojofoundation/fortran_funit"
 }

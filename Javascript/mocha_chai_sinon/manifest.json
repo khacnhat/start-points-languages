@@ -15,15 +15,5 @@
 
   "display_name": "Javascript, Mocha+chai+sinon",
 
-  "image_name": "cyberdojofoundation/javascript-node_mocha_chai_sinon",
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :red   if /AssertionError:/.match(output)",
-    "  return :amber if /SyntaxError:/.match(output)",
-    "  return :amber if /ReferenceError:/.match(output)",
-    "  return :amber if /TypeError:/.match(output)",
-    "  return :green",
-    "}"
-  ]
+  "image_name": "cyberdojofoundation/javascript-node_mocha_chai_sinon"
 }

@@ -12,13 +12,5 @@
 
   "display_name": "Python, py.test",
 
-  "image_name": "cyberdojofoundation/python_pytest",
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :red   if /=== FAILURES ===/.match(output)",
-    "  return :green if /=== (\\d*) passed/.match(output)",
-    "  return :amber",
-    "}"
-  ]
+  "image_name": "cyberdojofoundation/python_pytest"
 }

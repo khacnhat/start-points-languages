@@ -12,13 +12,5 @@
 
   "display_name": "C++ (clang++), GoogleTest",
 
-  "image_name": "cyberdojofoundation/clangpp_googletest",
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :red   if /\\[  FAILED  \\]/.match(output)",
-    "  return :green if /\\[  PASSED  \\]/.match(output)",
-    "  return :amber",
-    "}"
-  ]
+  "image_name": "cyberdojofoundation/clangpp_googletest"
 }

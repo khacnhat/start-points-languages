@@ -12,13 +12,6 @@
 
   "display_name": "C (clang), assert",
 
-  "image_name": "cyberdojofoundation/clang_assert",
+  "image_name": "cyberdojofoundation/clang_assert"
 
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :red   if /(.*)Assertion(.*)failed./.match(output)",
-    "  return :green if /(All|\\d*) tests passed/.match(output)",
-    "  return :amber",
-    "}"
-  ]
 }

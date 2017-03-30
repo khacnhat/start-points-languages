@@ -18,14 +18,6 @@
   "progress_regexs" : [
     "((\\d)+ tests)",
     "(\\d)+ failures[s]?, (\\d)+ exception[s]?"
-  ],
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :red   if / Failure: /.match(output)",
-    "  return :red   if / Exception: /.match(output)",
-    "  return :green if /0 failures, 0 exceptions/.match(output)",
-    "  return :amber",
-    "}"
   ]
+
 }

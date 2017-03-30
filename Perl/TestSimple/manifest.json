@@ -12,14 +12,5 @@
 
   "display_name": "Perl, Test::Simple",
 
-  "image_name": "cyberdojofoundation/perl_test_simple",
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :green if /All tests successful/.match(output)",
-    "  return :amber if /syntax error/.match(output)",
-    "  return :amber if /aborted due to compilation errors/.match(output)",
-    "  return :red",
-    "}"
-  ]
+  "image_name": "cyberdojofoundation/perl_test_simple"
 }

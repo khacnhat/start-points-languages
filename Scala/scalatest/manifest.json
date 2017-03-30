@@ -12,16 +12,5 @@
 
   "display_name": "Scala, scalatest",
 
-  "image_name": "cyberdojofoundation/scala_scalatest",
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  scala_pattern = /Tests: succeeded (\\d+), failed (\\d+), canceled (\\d+), ignored (\\d+), pending (\\d+)/",
-    "  if match = scala_pattern.match(output)",
-    "    match[2] == '0' ? :green : :red",
-    "  else",
-    "    :amber",
-    " end",
-    "}"
-  ]
+  "image_name": "cyberdojofoundation/scala_scalatest"
 }

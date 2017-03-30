@@ -10,13 +10,5 @@
 
   "display_name": "R, RUnit",
 
-  "image_name": "cyberdojofoundation/r_runit",
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :red   if /Error in check(.*)/.match(output)",
-    "  return :green if /All tests passed/.match(output)",
-    "  return :amber",
-    "}"
-  ]
+  "image_name": "cyberdojofoundation/r_runit"
 }

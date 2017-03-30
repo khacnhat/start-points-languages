@@ -12,15 +12,5 @@
 
   "display_name": "Ruby, RSpec",
 
-  "image_name": "cyberdojofoundation/ruby_rspec",
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :green if /(\\d*) example(s?), 0 failures/.match(output)",
-    "  return :red   if /(\\d*) example(s?), (\\d*) failure(s?)/.match(output)",
-    "  return :red   if /(\\d*) scenario(s?) \\((\\d*) failed/.match(output)",
-    "  return :green if /(\\d*) scenario(s?) \\((\\d*) passed/.match(output)",
-    "  return :amber",
-    "}"
-  ]
+  "image_name": "cyberdojofoundation/ruby_rspec"
 }

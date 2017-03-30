@@ -18,13 +18,5 @@
     "OK \\((\\d)+ tests, (\\d)+ ran, (\\d)+ checks, (\\d)+ ignored, (\\d)+ filtered out, (\\d)+ ms\\)"
   ],
 
-  "image_name": "cyberdojofoundation/gpp_cpputest",
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :red   if /Errors \\((\\d+) failures, (\\d+) tests/.match(output)",
-    "  return :green if /OK \\((\\d+) tests, (\\d+) ran/.match(output)",
-    "  return :amber",
-    "}"
-  ]
+  "image_name": "cyberdojofoundation/gpp_cpputest"
 }

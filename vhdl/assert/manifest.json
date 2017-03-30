@@ -9,13 +9,5 @@
 
   "display_name": "VHDL, assert",
 
-  "image_name": "cyberdojofoundation/vhdl_assert",
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :red   if /assertion failed/.match(output)",
-    "  return :amber if /compilation error/.match(output)",
-    "  return :green",
-    "}"
-  ]
+  "image_name": "cyberdojofoundation/vhdl_assert"
 }

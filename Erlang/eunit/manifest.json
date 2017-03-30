@@ -13,13 +13,5 @@
 
   "display_name": "Erlang, eunit",
 
-  "image_name": "cyberdojofoundation/erlang_eunit",
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :red   if /Failed: /.match(output)",
-    "  return :green if /passed./.match(output)",
-    "  return :amber",
-    "}"
-  ]
+  "image_name": "cyberdojofoundation/erlang_eunit"
 }

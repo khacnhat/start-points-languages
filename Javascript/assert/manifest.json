@@ -12,13 +12,5 @@
 
   "display_name": "Javascript, assert",
 
-  "image_name": "cyberdojofoundation/javascript-node_assert",
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :red   if /AssertionError/.match(output)",
-    "  return :green if /^All tests passed/.match(output)",
-    "  return :amber",
-    "}"
-  ]
+  "image_name": "cyberdojofoundation/javascript-node_assert"
 }

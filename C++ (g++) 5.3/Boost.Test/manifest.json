@@ -12,14 +12,5 @@
 
   "display_name": "C++ (g++), Boost.Test",
 
-  "image_name": "cyberdojofoundation/gpp_boosttest",
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :red   if /\\*\\*\\* (\\d+) failure is detected/.match(output)",
-    "  return :red   if /\\*\\*\\* (\\d+) failures are detected/.match(output)",
-    "  return :green if /\\*\\*\\* No errors detected/.match(output)",
-    "  return :amber",
-    "}"
-  ]
+  "image_name": "cyberdojofoundation/gpp_boosttest"
 }

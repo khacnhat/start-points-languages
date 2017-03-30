@@ -13,16 +13,5 @@
 
   "display_name": "C++ (clang++), Igloo",
 
-  "image_name": "cyberdojofoundation/clangpp_igloo",
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  igloo_pattern =  /Test run complete. (\\d+) tests run, (\\d+) succeeded, (\\d+) failed./",
-    "  if match = igloo_pattern.match(output)",
-    "    match[3] == '0' ? :green : :red",
-    "  else",
-    "   :amber",
-    "  end",
-    "}"
-  ]
+  "image_name": "cyberdojofoundation/clangpp_igloo"
 }

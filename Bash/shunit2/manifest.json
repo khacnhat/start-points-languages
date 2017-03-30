@@ -11,14 +11,5 @@
 
   "display_name": "Bash, shunit2",
 
-  "image_name": "cyberdojofoundation/bash_shunit2",
-
-  "red_amber_green" : [
-    "lambda { |output|",
-    "  return :amber if /shunit2:ERROR/.match(output)",
-    "  return :red   if /Ran (\\d*) test(s?)\\.\\n\\nFAILED/.match(output)",
-    "  return :green if /Ran (\\d*) test(s?)\\.\\n\\nOK/.match(output)",
-    "  return :amber",
-    "}"
-  ]
+  "image_name": "cyberdojofoundation/bash_shunit2"
 }
