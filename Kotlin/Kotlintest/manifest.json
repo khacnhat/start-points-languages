@@ -1,0 +1,14 @@
+
+{
+  "visible_filenames": [
+    "HikerTest.kt",
+    "Hiker.kt",
+    "cyber-dojo.sh"
+  ],
+
+  "filename_extension": ".kt",
+
+  "display_name": "Kotlin, Kotlintest",
+
+  "image_name": "cyberdojofoundation/kotlin_kotlintest"
+}
