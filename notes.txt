@@ -5,16 +5,11 @@ for creating the language's base docker image. For example:
   Go/_docker_context/Dockerfile
 is used to script the creation of the Go docker image
 
-Each language+test has its own language sub-folder
-which contains the Dockerfile (and context) for creating
-the language+test's docker image. For example:
-  Go/testing/Dockerfile
+Each language+test has its own language sub-folder with its
+own _docker_context sub-folder which contains the Dockerfile (and context)
+for creating the language+test's docker image. For example:
+  Go/testing/_docker_context/Dockerfile
 is used to script the creation of the Go+testing docker image.
-
-Sometimes a language/test's Dockerfile
-contains nothing except a FROM command. Viz, I could use
-the language's base docker-image. But I do it anyway for
-regularity.
 
 New docker images are pushed to their cyberdojofoundation hub
 https://hub.docker.com/u/cyberdojofoundation/
@@ -26,12 +21,3 @@ password: ...
 email: ...
 
 $ docker push cyberdojofoundation/NAME
-
-#----------------------------------------------------------------------
-
-TODO: Check there are no extraneous files.
-      Eg C#/SpecFlow/nunit.framework.dll is probably not needed.
-
-TODO: Migrate to Alpine-based images.
-
-TODO: Move images from cyberdojofoundation hub to cyberdojo hub.
