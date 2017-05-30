@@ -10,7 +10,7 @@
 The git repo for [cyber-dojo's](https://github.com/cyber-dojo/web)
 [setup a new practice session from a <em>default</em> start point] languages+tests choices.
 
-![languages](https://1.bp.blogspot.com/-uQ0VHRgGNj4/V7QFRqruWXI/AAAAAAAAEqw/xzDTVGgFmxYwxWtwcDjAwbFj1zaVmF7_gCLcB/s320/setup_languages.png) <!-- .element style="width:75%" -->
+![languages](https://1.bp.blogspot.com/-uQ0VHRgGNj4/V7QFRqruWXI/AAAAAAAAEqw/xzDTVGgFmxYwxWtwcDjAwbFj1zaVmF7_gCLcB/s320/setup_languages.png) <!-- .element style="width:700px;" -->
 
 You can specify and use an alternative languages+tests start-point.
 
