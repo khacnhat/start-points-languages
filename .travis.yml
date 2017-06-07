@@ -1,4 +1,3 @@
-sudo: required
 services: docker
 language: generic
 
@@ -6,9 +5,11 @@ script:
     - RAW=https://raw.githubusercontent.com/cyber-dojo
     - curl -O ${RAW}/commander/master/cyber-dojo
     - chmod +x cyber-dojo
-    - my_url=https://github.com/cyber-dojo/start-points-languages.git
-    - ./cyber-dojo start-point create git_languages --git=${my_url}
+
+    - MY_URL=https://github.com/cyber-dojo/start-points-languages.git
+    - ./cyber-dojo start-point create git_languages --git=${MY_URL}
     - ./cyber-dojo start-point ls | grep git_languages
-    - list=${RAW}/start-points-languages/master/languages_list
-    - ./cyber-dojo start-point create list_languages --list=${list}
+
+    - LIST=${RAW}/start-points-languages/master/languages_list
+    - ./cyber-dojo start-point create list_languages --list=${LIST}
     - ./cyber-dojo start-point ls | grep list_languages
