@@ -3,8 +3,12 @@ services: docker
 language: generic
 
 script:
-    - curl -O https://raw.githubusercontent.com/cyber-dojo/commander/master/cyber-dojo
+    - RAW=https://raw.githubusercontent.com/cyber-dojo
+    - curl -O ${RAW}/commander/master/cyber-dojo
     - chmod +x cyber-dojo
     - my_url=https://github.com/cyber-dojo/start-points-languages.git
-    - ./cyber-dojo start-point create languages --git=${my_url}
-    - ./cyber-dojo start-point ls | grep languages
+    - ./cyber-dojo start-point create git_languages --git=${my_url}
+    - ./cyber-dojo start-point ls | grep git_languages
+    - list=${RAW}/start-points-languages/master/languages_list
+    - ./cyber-dojo start-point create list_languages --list=${list}
+    - ./cyber-dojo start-point ls | grep list_languages
