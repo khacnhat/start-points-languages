@@ -1,6 +1,5 @@
-#include <hiker.hpp>
-#define CATCH_CONFIG_MAIN
-#include "catch.hpp"  // https://github.com/philsquared/Catch
+#include "hiker.hpp"
+#include "catch.hpp"
 
 TEST_CASE( "Life the universe and everything", "[hhgttg]" )
 {

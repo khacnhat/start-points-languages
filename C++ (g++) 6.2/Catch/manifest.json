@@ -1,6 +1,7 @@
 
 {
   "visible_filenames": [
+    "catch.main.cpp",
     "hiker.tests.cpp",
     "hiker.cpp",
     "hiker.hpp",
