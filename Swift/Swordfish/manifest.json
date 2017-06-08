@@ -1,0 +1,16 @@
+
+{
+  "visible_filenames": [
+    "swordfish.swift",
+    "hikertests.swift",
+    "hiker.swift",
+    "main.swift",
+    "cyber-dojo.sh"
+  ],
+
+  "filename_extension" : ".swift",
+
+  "display_name": "Swift, Swordfish",
+
+  "image_name": "cyberdojofoundation/swift_xctest"
+}
