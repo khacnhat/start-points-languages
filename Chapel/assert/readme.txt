@@ -1,0 +1,1 @@
+moved to https://github.com/cyber-dojo-languages/chapel-assert
