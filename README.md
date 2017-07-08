@@ -19,7 +19,8 @@ yet been moved.
 - - - -
 
 Assuming the files in the repos specified in the list have the
-[correct format](http://blog.cyber-dojo.org/2016/08/creating-your-own-start-points.html):
+[correct format](http://blog.cyber-dojo.org/2016/08/creating-your-own-start-points.html)
+you create a languages start-point from the list as follows:
 
 ```
 $ ./cyber-dojo start-point create olve --list=https://github.com/cyber-dojo/start-points-languages/blob/master/languages_list
@@ -27,8 +28,7 @@ $ ./cyber-dojo up --languages=olve
 ```
 
 The [languages_list](https://github.com/cyber-dojo/start-points-languages/blob/master/languages_list)
-file is the languages default. In other words the command below is equivalent to
-the commands above.
+file is the languages default. In other words the commands above are the same as:
 
 ```
 $ ./cyber-dojo up
