@@ -8,8 +8,9 @@
 Note: The languages and their test frameworks are slowly
 being moved from this one repo into separate repos in
 https://github.com/cyber-dojo/start-points-languages
-where Travis builds their docker images and tests their
-start-point files.
+where Travis builds their docker image, tests their
+start-point files, and pushes the docker image to
+dockerhub.
 
 The [languages_list](https://github.com/cyber-dojo/start-points-languages/blob/master/languages_list)
 file contains one line for each repo that has been moved to https://github.com/cyber-dojo/start-points-languages
