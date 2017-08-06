@@ -9,7 +9,7 @@ Note: The languages and their test frameworks are slowly
 being moved from this one repo into separate repos in
 https://github.com/cyber-dojo/start-points-languages
 where Travis builds their docker image, tests their
-start-point files, and pushes the docker image to
+start-point files, and pushes their docker image to
 dockerhub.
 
 The [languages_list](https://github.com/cyber-dojo/start-points-languages/blob/master/languages_list)
