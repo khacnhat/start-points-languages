@@ -24,7 +24,8 @@ Assuming the files in the repos specified in the list have the
 you create a languages start-point from the list as follows:
 
 ```
-$ ./cyber-dojo start-point create olve --list=https://github.com/cyber-dojo/start-points-languages/blob/master/languages_list
+$ URL=https://github.com/cyber-dojo/start-points-languages/blob/master/languages_list
+$ ./cyber-dojo start-point create olve --list=${URL}
 $ ./cyber-dojo up --languages=olve
 ```
 
