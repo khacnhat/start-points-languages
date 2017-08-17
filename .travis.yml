@@ -1,5 +1,6 @@
+sudo: required
 services: docker
-language: generic
+language: node_js
 
 script:
     - RAW=https://raw.githubusercontent.com/cyber-dojo
@@ -13,3 +14,8 @@ script:
     - LIST=${RAW}/start-points-languages/master/languages_list
     - ./cyber-dojo start-point create list_languages --list=${LIST}
     - ./cyber-dojo start-point ls | grep list_languages
+
+    - npm install travis-ci
+    - script=trigger-build.js
+    - curl -O https://raw.githubusercontent.com/cyber-dojo/cyber-dojo/master/shared/${script}
+    - node ${script} cyber-dojo/web
