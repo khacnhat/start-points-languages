@@ -7,10 +7,6 @@ script:
     - curl -O ${RAW}/commander/master/cyber-dojo
     - chmod +x cyber-dojo
 
-    - MY_URL=https://github.com/cyber-dojo/start-points-languages.git
-    - ./cyber-dojo start-point create git_languages --git=${MY_URL}
-    - ./cyber-dojo start-point ls | grep git_languages
-
     - LIST=${RAW}/start-points-languages/master/languages_list
     - ./cyber-dojo start-point create list_languages --list=${LIST}
     - ./cyber-dojo start-point ls | grep list_languages
