@@ -1,8 +1,4 @@
 
-[Take me to the cyber-dojo home page](https://github.com/cyber-dojo/cyber-dojo).
-
-- - - -
-
 [![Build Status](https://travis-ci.org/cyber-dojo/start-points-languages.svg?branch=master)](https://travis-ci.org/cyber-dojo/start-points-languages)
 
 The [languages_list](https://github.com/cyber-dojo/start-points-languages/blob/master/languages_list)
