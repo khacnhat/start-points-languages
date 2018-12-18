@@ -5,14 +5,11 @@ git:
   depth: 1
   quiet: true
 
-#before_install:
-#    - docker pull cyberdojo/start-points-base
-
 script:
-    # new architecture
+    # fast new architecture
     - ./sh/travis.sh
 
-    # old architecture
+    # slow old architecture
     - RAW=https://raw.githubusercontent.com/cyber-dojo
     - curl -O ${RAW}/commander/master/cyber-dojo
     - chmod +x cyber-dojo
