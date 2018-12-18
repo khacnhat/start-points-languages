@@ -8,19 +8,3 @@ git:
 script:
     - ./sh/travis_new_architecture.sh
     - ./sh/travis_old_architecture.sh
-
-    #- RAW=https://raw.githubusercontent.com/cyber-dojo
-    #- curl -O ${RAW}/commander/master/cyber-dojo
-    #- chmod +x cyber-dojo
-
-    #- sudo mkdir /cyber-dojo
-    #- sudo chown -R 19663:19663 /cyber-dojo
-
-    #- LIST=${RAW}/start-points-languages/master/languages_list
-    #- ./cyber-dojo start-point create list_languages --list=${LIST}
-    #- ./cyber-dojo start-point ls | grep list_languages
-
-    #- npm install travis-ci
-    #- script=trigger-build.js
-    #- curl -O https://raw.githubusercontent.com/cyber-dojo/cyber-dojo/master/shared/${script}
-    #- node ${script} cyber-dojo/web
