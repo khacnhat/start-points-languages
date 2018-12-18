@@ -5,14 +5,19 @@ git:
   depth: 1
   quiet: true
 
-before_install:
-    - docker pull cyberdojo/start-points-base
+#before_install:
+#    - docker pull cyberdojo/start-points-base
 
 script:
+    # new architecture
     - ./sh/travis.sh
+
+    # old architecture
     - RAW=https://raw.githubusercontent.com/cyber-dojo
     - curl -O ${RAW}/commander/master/cyber-dojo
-    - chmod +x cyber-dojo
+    - whoami
+    - sudo mkdir /cyber-dojo
+    - sudo chown -R 19663:19663 /cyber-dojo
 
     - LIST=${RAW}/start-points-languages/master/languages_list
     - ./cyber-dojo start-point create list_languages --list=${LIST}
