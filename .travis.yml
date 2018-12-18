@@ -6,7 +6,7 @@ git:
   quiet: true
 
 script:
-    - ./sh/travis.sh
+    # - ./sh/travis.sh
     - RAW=https://raw.githubusercontent.com/cyber-dojo
     - curl -O ${RAW}/commander/master/cyber-dojo
     - chmod +x cyber-dojo
