@@ -1,8 +1,12 @@
 sudo: required
 services: docker
 language: node_js
+git:
+  depth: 1
+  quiet: true
 
 script:
+    - ./sh/travis.sh
     - RAW=https://raw.githubusercontent.com/cyber-dojo
     - curl -O ${RAW}/commander/master/cyber-dojo
     - chmod +x cyber-dojo
