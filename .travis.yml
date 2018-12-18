@@ -14,7 +14,6 @@ script:
     - curl -O ${RAW}/commander/master/cyber-dojo
     - chmod +x cyber-dojo
 
-    - whoami
     - sudo mkdir /cyber-dojo
     - sudo chown -R 19663:19663 /cyber-dojo
 
