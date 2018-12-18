@@ -1,6 +1,9 @@
 #!/bin/bash
 set -ev
 
+# todo: MY_REPO_NAME is this repo
+# passing it as file:///... based url would make things a bit quicker
+
 readonly SCRIPT=build_cyber_dojo_start_points_image.sh
 readonly URL=https://raw.githubusercontent.com/cyber-dojo/start-points-base/master/${SCRIPT}
 
