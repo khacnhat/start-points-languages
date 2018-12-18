@@ -29,4 +29,4 @@ $ ./cyber-dojo up
 
 <img src="https://raw.githubusercontent.com/cyber-dojo/nginx/master/images/home_page_logo.png" alt="cyber-dojo yin/yang logo" width="50px" height="50px"/>
 
-<img src="https://github.com/cyber-dojo/start-points-languages/blob/master/setup_default_practice.png" width="700px"/>
+<img src="https://github.com/cyber-dojo/start-points-languages/blob/master/docs/setup_default_practice.png" width="700px"/>
