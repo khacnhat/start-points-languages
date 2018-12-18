@@ -5,6 +5,9 @@ git:
   depth: 1
   quiet: true
 
+before_install:
+    - docker pull cyberdojo/start-points-base
+
 script:
     - ./sh/travis.sh
     - RAW=https://raw.githubusercontent.com/cyber-dojo
