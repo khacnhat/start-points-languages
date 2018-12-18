@@ -1,0 +1,18 @@
+
+{
+  "display_name": "C#, Moq",
+
+  "visible_filenames": [
+    "HikerTest.cs",
+    "IHiker.cs",
+    "cyber-dojo.sh"
+  ],
+
+  "image_name": "cyberdojofoundation/csharp_moq",
+
+  "filename_extension": ".cs",
+
+  "hidden_filenames": [ "TestResult\\.xml" ],
+
+  "runner_choice": "stateless"
+}

@@ -1,0 +1,26 @@
+{
+  "display_name": "Ruby, Approval",
+
+  "image_name": "cyberdojofoundation/ruby_approval",
+
+  "visible_filenames": [
+    "hiker_spec.rb",
+    "hiker.rb",
+    "spec_helper.rb",
+    "hiker_hhgttg_answer.approved.txt",
+    "cyber-dojo.sh",
+    "coverage.rb"
+  ],
+
+  "hidden_filenames": [
+    "coverage/\\.last_run\\.json",
+    "coverage/\\.resultset\\.json",
+    "\\.approvals"
+  ],
+
+  "filename_extension" : [ ".rb", ".txt" ],
+
+  "runner_choice": "stateless",
+
+  "tab_size": 2
+}
