@@ -1,5 +1,8 @@
 services: docker
 language: node_js
+git:
+  depth: 1
+  quiet: true
 
 script:
     - ./_ci_scripts/travis_new_architecture.sh
