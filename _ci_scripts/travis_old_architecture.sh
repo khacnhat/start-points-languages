@@ -9,7 +9,7 @@ curl -O ${URL}
 chmod +x ./${SCRIPT}
 
 sudo mkdir /cyber-dojo
-sudo chown -R 19663:19663 /cyber-dojo
+sudo chown -R 19663:65533 /cyber-dojo
 
 readonly LIST=${ORG}/start-points-languages/master/languages_list
 ./${SCRIPT} start-point create list_languages --list=${LIST}
