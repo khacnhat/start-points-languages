@@ -1,4 +1,6 @@
 
+<img src="https://raw.githubusercontent.com/cyber-dojo/nginx/master/images/home_page_logo.png" alt="cyber-dojo yin/yang logo" width="50px" height="50px"/>
+
 Current architecture
 [![Build Status](https://travis-ci.org/cyber-dojo/start-points-languages.svg?branch=master)](https://travis-ci.org/cyber-dojo/start-points-languages)
 
@@ -42,5 +44,3 @@ $ build_cyber_dojo_start_points_image.sh \
       https://github.com/cyber-dojo/start-points-exercises.git \
       https://github.com/cyber-dojo/start-points-custom.git    \
 ```
-
-<img src="https://raw.githubusercontent.com/cyber-dojo/nginx/master/images/home_page_logo.png" alt="cyber-dojo yin/yang logo" width="50px" height="50px"/>
