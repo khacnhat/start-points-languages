@@ -1,6 +1,8 @@
 #!/bin/bash
 set -ev
 
+readonly MY_DIR="$( cd "$( dirname "${0}" )" && pwd )"
+
 readonly MY_TYPE=languages
 readonly SCRIPT=build_cyber_dojo_start_points_image.sh
 readonly URL=https://raw.githubusercontent.com/cyber-dojo/start-points-base/master/${SCRIPT}
@@ -15,7 +17,10 @@ curl -O ${URL}
 chmod +x ./${SCRIPT}
 
 ./${SCRIPT} \
-  ${MY_IMAGE_NAME} \
-  https://github.com/cyber-dojo/start-points-${MY_TYPE}.git \
-  https://github.com/cyber-dojo/start-points-custom.git     \
-  https://github.com/cyber-dojo/start-points-exercises.git  \
+    ${MY_IMAGE_NAME} \
+    --${MY_TYPE} \
+      "$(< ${MY_DIR}/../languages_list)" \
+    --custom \
+      https://github.com/cyber-dojo/start-points-custom.git     \
+    --exercise \
+      https://github.com/cyber-dojo/start-points-exercises.git  \
