@@ -22,5 +22,5 @@ chmod +x ./${SCRIPT}
       "$(< ${MY_DIR}/../languages_list)" \
     --custom \
       https://github.com/cyber-dojo/start-points-custom.git     \
-    --exercise \
+    --exercises \
       https://github.com/cyber-dojo/start-points-exercises.git  \
