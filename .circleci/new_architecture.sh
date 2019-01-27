@@ -6,7 +6,7 @@ readonly MY_DIR="$( cd "$( dirname "${0}" )" && pwd )"
 readonly MY_TYPE=languages
 readonly SCRIPT=build_cyber_dojo_start_points_image.sh
 readonly URL=https://raw.githubusercontent.com/cyber-dojo/start-points-base/master/${SCRIPT}
-readonly MY_IMAGE_NAME=cyberdojo/start-points-${MY_TYPE}-test
+readonly MY_IMAGE_NAME=cyberdojo/start-points
 readonly TMP_DIR=$(mktemp -d /tmp/cyber-dojo-start-points-${MY_TYPE}.XXXXXXXXX)
 
 cleanup() { rm -rf ${TMP_DIR} > /dev/null; }
