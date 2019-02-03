@@ -12,7 +12,7 @@ jobs:
       - run:
           name: build image from start-points repos and push to dockerhub
           command: |
-            set -e
+            set -ev
             ./pipe_build_up_test.sh
             echo "${DOCKER_PASS}" | docker login -u "${DOCKER_USER}" --password-stdin
             readonly image=cyberdojo/start-points
