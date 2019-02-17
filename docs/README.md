@@ -29,19 +29,25 @@ $ ./cyber-dojo up
 ```
 
 - - - -
-New architecture (not live yet)
+New architecture (currently live on https://beta.cyber-dojo.org only)
 [![CircleCI](https://circleci.com/gh/cyber-dojo/start-points-languages.svg?style=svg)](https://circleci.com/gh/cyber-dojo/start-points-languages)
 
-This repo specifies the the default language-test-framework start-points list
-when creating your own start-point image with the
+The languages_list file in this repo specifies the
+language-test-framework git-repo-urls used to create the
+cyberdojo/start-points image from the
 [build_cyber_dojo_start_points_image.sh](../build_cyber_dojo_start_point_image.sh)
-script. Viz, the first github URL option in this command:
+script:
 
 ```bash
+$ FILENAME=languages_list
+$ URL=https://raw.githubusercontent.com/cyber-dojo/start-points-languages/master/${FILENAME}
+$ curl -O ${URL}
+$ LIST="$(< ./${FILENAME})"
+$
 $ build_cyber_dojo_start_points_image.sh \
     acme/my-start-points \
       --languages \
-        https://github.com/cyber-dojo/start-points-languages.git \
+        "${LIST}" \
       --exercises \
         https://github.com/cyber-dojo/start-points-exercises.git \
       --custom \
