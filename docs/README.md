@@ -34,7 +34,7 @@ New architecture (currently live on https://beta.cyber-dojo.org only)
 
 The [languages_list](../languages_list) file in this repo specifies the
 70+ language-test-framework git-repo-urls used to create the
-[cyberdojo/start-points](https://hub.docker.com/r/cyberdojo/start-points) image from the
+[cyberdojo/start-points](https://hub.docker.com/r/cyberdojo/start-points) image using the
 [build_cyber_dojo_start_points_image.sh](https://github.com/cyber-dojo/start-points-base/blob/master/build_cyber_dojo_start_points_image.sh)
 script:
 
