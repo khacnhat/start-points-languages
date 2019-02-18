@@ -46,10 +46,6 @@ $ LIST="$(< ./${FILENAME})"
 $
 $ build_cyber_dojo_start_points_image.sh \
     acme/my-start-points \
-      --custom \
-        https://github.com/cyber-dojo/start-points-custom.git    \
-      --exercises \
-        https://github.com/cyber-dojo/start-points-exercises.git \
       --languages \
         "${LIST}"
 ```
