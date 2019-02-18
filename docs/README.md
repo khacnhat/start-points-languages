@@ -32,10 +32,10 @@ $ ./cyber-dojo up
 New architecture (currently live on https://beta.cyber-dojo.org only)
 [![CircleCI](https://circleci.com/gh/cyber-dojo/start-points-languages.svg?style=svg)](https://circleci.com/gh/cyber-dojo/start-points-languages)
 
-The languages_list file in this repo specifies the
-language-test-framework git-repo-urls used to create the
-cyberdojo/start-points image from the
-[build_cyber_dojo_start_points_image.sh](../build_cyber_dojo_start_point_image.sh)
+The [languages_list](./languages_list) file in this repo specifies the
+70+ language-test-framework git-repo-urls used to create the
+[cyberdojo/start-points](https://hub.docker.com/r/cyberdojo/start-points) image from the
+[build_cyber_dojo_start_points_image.sh](https://github.com/cyber-dojo/start-points-base/blob/master/build_cyber_dojo_start_points_image.sh)
 script:
 
 ```bash
@@ -46,10 +46,10 @@ $ LIST="$(< ./${FILENAME})"
 $
 $ build_cyber_dojo_start_points_image.sh \
     acme/my-start-points \
-      --languages \
-        "${LIST}" \
-      --exercises \
-        https://github.com/cyber-dojo/start-points-exercises.git \
       --custom \
         https://github.com/cyber-dojo/start-points-custom.git    \
+      --exercises \
+        https://github.com/cyber-dojo/start-points-exercises.git \
+      --languages \
+        "${LIST}"
 ```
