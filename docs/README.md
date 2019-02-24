@@ -44,7 +44,7 @@ $ URL=https://raw.githubusercontent.com/cyber-dojo/start-points-languages/master
 $ curl -O ${URL}
 $ LIST="$(< ./${FILENAME})"
 $
-$ build_cyber_dojo_start_points_image.sh \
+$ cyber_dojo_start_points_create.sh \
     acme/my-start-points \
       --languages \
         "${LIST}"
